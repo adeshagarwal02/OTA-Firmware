@@ -9,8 +9,6 @@ bool download(const char* url, const char* outfilename){
     CURL* curl;
     FILE* fp;
     CURLcode res;
-    //const char* url = "http://192.168.29.87:8000/version.json"; // Replace with your URL
-    //const char* outfilename = "../downloads/version.json"; // Replace with your desired local filename
 
     curl = curl_easy_init();
     if (curl) {

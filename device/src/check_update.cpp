@@ -2,8 +2,8 @@
 #include "../header/read_file.hpp"
 
 bool check_update(void) {
-    const char* url = "http://192.168.29.87:8000/version.json"; // Replace with your URL
-    const char* outfilename = "../downloads/version.json"; // Replace with your desired local filename
+    const char* url = "http://192.168.29.87:8000/version.json";
+    const char* outfilename = "../downloads/version.json";
     
     if(download(url,outfilename)){
 	    std::cout << "File downloaded successfully (if no errors reported)." << std::endl;
