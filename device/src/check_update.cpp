@@ -1,5 +1,5 @@
-#include "../header/http_download.hpp"
-#include "../header/read_file.hpp"
+#include "http_download.hpp"
+#include "read_file.hpp"
 
 bool check_update(void) {
     const char* url = "http://192.168.29.87:8000/version.json";

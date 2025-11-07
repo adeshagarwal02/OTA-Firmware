@@ -1,4 +1,4 @@
-#include "../header/read_file.hpp"
+#include "read_file.hpp"
 
 std::string read_file(std::string file_name)
 {
