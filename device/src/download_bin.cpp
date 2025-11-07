@@ -1,5 +1,4 @@
-#include "../header/http_download.hpp"
-//#include "../header/read_file.hpp"
+#include "http_download.hpp"
 
 bool download_bin(void) {
     const char* url = "http://192.168.29.87:8000/firmware/firmware_v2.bin";
