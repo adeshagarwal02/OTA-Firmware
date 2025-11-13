@@ -2,11 +2,11 @@
 
 std::string read_file(std::string file_name)
 {
-	std::string version {};
+	std::string  data{};
 	std::fstream fp;
 	fp.open(file_name);
-	std::getline(fp,version);
+	std::getline(fp,data);
 	fp.close();
-	std::cout<<version<<std::endl;
-	return version;
+	std::cout<<data<<std::endl;
+	return data;
 }
