@@ -4,7 +4,6 @@
 bool check_update(void) {
     const char* url = "http://192.168.29.87:8000/version.json";
     const char* outfilename = "../downloads/version.json";
-    
     if(download(url,outfilename)){
 	    std::cout << "File downloaded successfully (if no errors reported)." << std::endl;
 	    std::string new_version {"../downloads/version.json"};
@@ -18,6 +17,7 @@ bool check_update(void) {
 	    }
 	    else{
 		    std::cout << "New update is present"<<std::endl;
+
 	    }
     }
     return true;
